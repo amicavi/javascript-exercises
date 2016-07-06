@@ -13,5 +13,49 @@
 
 // SOLUTION
 
+function isIsogram(str){
+  var strLowerCase = str.toLowerCase();
+  var regexp = /[a-z]/gi;
+  var matches_array = strLowerCase.match(regexp);
+  
+  var result = matches_array.every(areEqual);
+  
+  
+  function areEqual(item){
+  
+    for (var i = 0; i < matches_array.length;) {
+    
+      if(matches_array.indexOf(item) == i) {
+        i++;
+        
+        if (item == matches_array[i]) {
+          return false;
+        } else {
+          return true;
+        }
+        
+        
+      }else {
+      
+        if (item == matches_array[i]) {
+          return false;
+        } else {
+          return true;
+        }
+      }
+      
+      i++;
+      
+    };
+  }
+  return result;
+}
+
 // TEST CASES
 
+Test.assertSimilar( isIsogram("Dermatoglyphics"), true );
+Test.assertSimilar( isIsogram("isogram"), true );
+Test.assertSimilar( isIsogram("aba"), false, "same chars may not be adjacent" );
+Test.assertSimilar( isIsogram("moOse"), false, "same chars may not be same case" );
+Test.assertSimilar( isIsogram("isIsogram"), false );
+Test.assertSimilar( isIsogram(""), true, "an empty string is a valid isogram" );
