@@ -9,18 +9,6 @@
 // validatePIN("12345") === false
 // validatePIN("a234") === false
 
-function validatePIN (pin) {
-  if (/^\d+$/.test(pin) == true){
-      if (pin.length == 4 || pin.length == 6){
-        return true;
-      } else {
-        return false;
-      }
-  } else {
-    return false;
-  } 
-}
-
 // TEST CASES
 
 Test.describe("validatePIN", function() {
@@ -51,6 +39,22 @@ Test.describe("validatePIN", function() {
     Test.assertEquals(validatePIN("090909"),true, "Wrong output for '090909'");
   });
 });
+
+// MY SOLUTION
+
+
+function validatePIN (pin) {
+  if (/^\d+$/.test(pin) == true){
+      if (pin.length == 4 || pin.length == 6){
+        return true;
+      } else {
+        return false;
+      }
+  } else {
+    return false;
+  } 
+}
+
 
 // BEST SOLUTION
 
