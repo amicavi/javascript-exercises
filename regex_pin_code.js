@@ -42,7 +42,6 @@ Test.describe("validatePIN", function() {
 
 // MY SOLUTION
 
-
 function validatePIN (pin) {
   if (/^\d+$/.test(pin) == true){
       if (pin.length == 4 || pin.length == 6){
@@ -54,7 +53,6 @@ function validatePIN (pin) {
     return false;
   } 
 }
-
 
 // BEST SOLUTION
 
