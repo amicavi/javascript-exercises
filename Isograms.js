@@ -20,7 +20,6 @@ Test.assertSimilar( isIsogram("moOse"), false, "same chars may not be same case"
 Test.assertSimilar( isIsogram("isIsogram"), false );
 Test.assertSimilar( isIsogram(""), true, "an empty string is a valid isogram" );
 
-
 // MY SOLUTION
 
 function isIsogram(str){
