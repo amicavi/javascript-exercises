@@ -7,13 +7,7 @@
 // 5.5589 is rounded 5.56   
 // 3.3424 is rounded 3.34
 
-// Solution 
-function twoDecimalPlaces(n) {
-  return Math.round(n*100)/100;
-}
-
-
-// Test Cases
+// TEST CASES
 
 Test.describe("twoDecimalPlaces", function() {
   Test.it("works for some examples", function() {
@@ -28,7 +22,13 @@ Test.describe("twoDecimalPlaces", function() {
     for (let i = 0; i < 100; ++i) {
       let number = Math.random() * 250.95316 - 125.47658;
       
-      Test.assertEquals(twoDecimalPlaces(number), solution(number), `didn't work for ${number}`)
+      Test.assertEquals(twoDecimalPlaces(number), solution(number), "didn't work for ${number}")
     }
   });
 });
+
+// MY SOLUTION
+
+function twoDecimalPlaces(n) {
+  return Math.round(n*100)/100;
+}
