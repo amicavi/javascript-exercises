@@ -8,7 +8,7 @@ Person.prototype.greet = function(otherName){
   return "Hi " + otherName + ", my name is " + name;
 }
 
-//Solution
+// MY SOLUTION
 
 function Person(name){
   this.name = name;
