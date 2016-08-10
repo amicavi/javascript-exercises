@@ -12,6 +12,7 @@
 
 // Create a function that can receive two 'fangs' and determine if the product of the two is a valid // vampire number.
 
+
 // TEST CASES
 
 Test.describe("Testing For Vampire Numbers", function(){
