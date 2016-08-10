@@ -1,6 +1,7 @@
 // Number Of Occurrences
 
-// The numberOfOccurrences function must return the number of occurrences of an element in an array.// 
+// The numberOfOccurrences function must return 
+// the number of occurrences of an element in an array. 
 
 // var arr = [0,1,2,2,3];
 // arr.numberOfOccurrences(0) === 1;
@@ -25,7 +26,7 @@ Array.prototype.numberOfOccurrences = function(n) {
   return counter;
 }
 
-// BEST SOLUTION
+// SOLUTION MOST POPULAR
 
 // Array.prototype.numberOfOccurrences = function(search) {
 //   return this.filter( function(num){ return search === num } ).length;
